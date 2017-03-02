@@ -11,14 +11,14 @@ Android Studio is the Official IDE for Android. Android Studio provides the fast
 Clone the repo and import the code in Android Studio,
 
 ```
-git clone https://github.com/IBM-Bluemix/chatbot-watson-android.git
+git clone https://github.com/Vikram984511/X-Chat.git
 ```
 
 ## Creation of Conversation Service
 
 Watson Conversation combines a number of cognitive techniques to help you build and train a bot - defining intents and entities and crafting dialog to simulate conversation.
 
-![Watson Conversation Service Overview](https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/Watson_Conversation_Service.png)
+![Watson Conversation Service Overview](https://github.com/Vikram984511/X-Chat/blob/master/Watson_Conversation_Service.png)
 
 <h3>Getting started</h3>
 Before you can start using the Conversation service, log in to IBM® Bluemix® and create a service instance.
@@ -211,8 +211,7 @@ If you have followed all the above instructions, you should be happily chatting 
 
 For integrating other Cognitive Services, Refer [Watson Developer Cloud](https://www.ibm.com/watson/developercloud/)
 
-### Don't stop here!!! Keep coding and using Bluemix
 
 ## License
 
-See [License.txt](https://github.com/IBM-Bluemix/chatbot-watson-android/blob/master/License.txt) for license information.
+See [License.txt] for license information.
