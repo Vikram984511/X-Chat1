@@ -74,7 +74,7 @@ Create some intents.
 
 Press Enter or click <strong>+</strong> to save the example.</li>
  	<li>Repeat the same process to add more examples. Provide at least 5 examples for each intent. The more examples you provide, the more accurate your application can be.
-<p align="center"><img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/define_intent.png" alt="Screen" /></p>
+<p align="center"><img src="https://github.com/Vikram984511/X-Chat/blob/master/define_intent.png" alt="Screen" /></p>
 </li>
  	<li>When you have finished adding examples, click <strong>Create</strong> to finish creating the intent.</li>
 </ol>
@@ -89,19 +89,19 @@ You can click any intent in the list to open it for editing. You can make the fo
  	<li>Move an example to a different intent.</li>
 </ul>
 To move an example, select the example by clicking the check box and then click <strong>Move to</strong>.
-<p align="center"><img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/move_example.png" alt="“Screen" /></p>
+<p align="center"><img src="https://github.com/Vikram984511/X-Chat/blob/master/move_example.png" alt="“Screen" /></p>
 
 <h3>Testing your intents</h3>
 After you have finished creating new intents, you can test the system to see if it recognizes your intents as you expect.
 <ol>
  	<li>In the Conversation tool, click the <img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/ask_watson.png" alt="“Ask" /> icon.</li>
  	<li>In the Try it out panel, enter a question or other text string and press Enter to see which intent is recognized. If the wrong intent is recognized, you can improve your model by adding this text as an example to the correct intent.<strong>Tip</strong>: If you have recently made changes in your workspace, you might see a message indicating that the system is still retraining. If you see this message, wait until training completes before testing:
-<p align="center"><img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/training.png" alt="Screen" /></p>
+<p align="center"><img src="https://github.com/Vikram984511/X-Chat/blob/master/training.png" alt="Screen" /></p>
 The response indicates which intent was recognized from your input.
-<p align="center"><img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/test_intents.png" alt="Screen" /></p>
+<p align="center"><img src="https://github.com/Vikram984511/X-Chat/blob/master/test_intents.png" alt="Screen" /></p>
 </li>
  	<li>If the system did not recognize the correct intent, you can correct it. To correct the recognized intent, click the displayed intent and then select the correct intent from the list. After your correction is submitted, the system automatically retrains itself to incorporate the new data.
-<p align="center"><img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/correct_intent.png" alt="Screen" /></p>
+<p align="center"><img src="https://github.com/Vikram984511/X-Chat/blob/master/correct_intent.png" alt="Screen" /></p>
 If your intents are not being correctly recognized, consider making the following kinds of changes:
 <ul>
  	<li>Add the unrecognized text as an example to the correct intent.</li>
@@ -128,7 +128,7 @@ You use the Conversation tool to create entities. The number of entities, entity
 </ul>
 </li>
  	<li>In the <strong>Value</strong> field, type the text of a possible value for the intent. An entity value can be any string up to 64 characters in length.<strong>Important</strong>: Don’t include sensitive or personal information in entity names or values. The names and values can be exposed in URLs in an app.</li>
- 	<li>In the <strong>Synonyms</strong> field, type any synonyms for the entity value. A synonym can be any string up to 64 characters in length. Press Enter to save each synonym.<img src="https://raw.githubusercontent.com/VidyasagarMSC/WatBot/initial/Images/define_entity.png" alt="Screen" /></li>
+ 	<li>In the <strong>Synonyms</strong> field, type any synonyms for the entity value. A synonym can be any string up to 64 characters in length. Press Enter to save each synonym.<img src="https://github.com/Vikram984511/X-Chat/blob/master/define_entity.png" alt="Screen" /></li>
  	<li>Click <strong>+</strong> and repeat the process to add more entity values.</li>
  	<li>When you are finished adding values and synonyms, click <strong>Create</strong>.</li>
 </ol>
@@ -138,70 +138,6 @@ The dialog component of the Conversation service uses the intents and entities t
 Post branching Intents and entities, this is how my Conversation Dialog on Bluemix looks like
 
 ![](https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/Conversation_Service_Bluemix.png)
-
-## Configure the App
-
-  <p>To configure  the App you need to get the Watson Conversation service <strong>Username</strong>, <strong>PassWord</strong> and <strong>WorkSpaceId</strong></p>
-
-* In the <strong>MainActivity</strong> class locate the method named <strong>sendMessage()</strong>.
-
-   ```
-     ConversationService service = new ConversationService(ConversationService.VERSION_DATE_2016_09_20);
-
-     service.setUsernameAndPassword("Your Watson service UserName", "Your watson service PassWord");
-
-     MessageRequest newMessage = new MessageRequest.Builder().inputText(inputmessage).build();
-
-     MessageResponse response = service.message("Your Workspace Id", newMessage).execute();
-   ```
-
-* Go to the Conversation service , and select the <strong>Service Credentials</strong> tab. Select <strong>password</strong> and <strong>username</strong>.
-
-![Conversation Credentials](https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/usernamePassword.png)
-
- </p>Add the `password` and `username` in the following code,</p>
-
- ```
- service.setUsernameAndPassword("Your Watson service UserName", "Your watson service PassWord");
-
- ```
-
-* Next is to get the <strong>workspace Id</strong>.
-
-<p>Launch the conversation service workspace and from the options select the <strong>View details</strong>.</p>
-
-<p align="center">
-<img src="https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/workspace1.png" width="350"> 
-<img src="https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/workspace2.png" width="350">
-</p>
-
-<p>Get the <strong>Workspace ID:</strong> and add it in the below code,</p>
-
-```
-MessageResponse response = service.message("Your Workspace Id", newMessage).execute();
-```
-
-* Build and Run your app.
-
-## Enable Text to Speech 
-
-* Create a Watson Text to Speech(TTS) service on [Bluemix](https://console.ng.bluemix.net/catalog/services/text-to-speech/?taxonomyNavigation=apps) 
-* Navigate to Service Credentials tab and click on "View Credentials".
-
-On Line 68 of MainActivity.java, replace the username and password placeholders with the TTS service credentials
-
-```
-service.setUsernameAndPassword("Your Text-to-Speech service username", "Your Text-to-Speech password");
-```
-* Build and Run your app.
-
-Now when you TAP on any message, the text will be heard via a Voice (Voice.EN_LISA). You can change the voice formats in the code (Lines 82-84 0f MainActivity.java)
-
-<strong>Note: </strong> The required gradle entries for TTS is already included in the build.gradle file 
-```
-compile 'com.ibm.watson.developer_cloud:text-to-speech:3.5.3'
-compile 'com.ibm.watson.developer_cloud:android-sdk:0.2.1'
-```
 
 ### Chat with your own WatBot 
 
