@@ -137,7 +137,7 @@ The dialog component of the Conversation service uses the intents and entities t
 
 Post branching Intents and entities, this is how my Conversation Dialog on Bluemix looks like
 
-![](https://github.com/VidyasagarMSC/WatBot/blob/initial/Images/Conversation_Service_Bluemix.png)
+![](https://github.com/Vikram984511/X-Chat/blob/master/Conversation_Service_Bluemix.png)
 
 ### Chat with your own WatBot 
 
