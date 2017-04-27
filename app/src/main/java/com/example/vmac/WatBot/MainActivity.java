@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Watson Text-to-Speech Service on Bluemix
         final TextToSpeech service = new TextToSpeech();
-        service.setUsernameAndPassword("5ac74b0b-43c3-4b8e-9d8e-47f23639672a", "0gS2ASEkof86");
+        service.setUsernameAndPassword("5b9eefa2-4fce-4385-8fdf-f2e2d7682427", "tx00AqEFG8hV");
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
@@ -107,10 +107,6 @@ public class MainActivity extends AppCompatActivity {
                 });
                 thread.start();
             }
-
-
-
-
 
 
             @Override
@@ -160,9 +156,9 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
                     ConversationService service = new ConversationService(ConversationService.VERSION_DATE_2016_09_20);
-                    service.setUsernameAndPassword("2df34d8c-5d73-4fac-b2ce-87974f6efbf3", "gG5wLLSeXDvO");
+                    service.setUsernameAndPassword("5dc9ce4c-1f0d-4a84-a286-4005f5326fce", "7RYm0hJEYI7n");
                     MessageRequest newMessage = new MessageRequest.Builder().inputText(inputmessage).context(context).build();
-                    MessageResponse response = service.message("d1ef50bd-68a3-4277-adf6-f3089648de4c", newMessage).execute();
+                    MessageResponse response = service.message("c18c3ffa-7338-4b02-8cbc-bae163178b08", newMessage).execute();
 
                     //Passing Context of last conversation
                     if (response.getContext() != null) {

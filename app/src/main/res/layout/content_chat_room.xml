@@ -34,6 +34,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp"
+            android:textColor="@color/black"
             android:background="@color/blue"
             android:hint="@string/what_s_on_your_mind"
             android:lines="3"
@@ -57,13 +58,13 @@
             android:elevation="0dp"
             android:paddingLeft="0dp"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_send" />
+            android:src="@mipmap/ic_launcher11" />
 
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="58dp"
-            app:srcCompat="@mipmap/voice1"
+            app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/imageButton"
             android:background="@color/blue"
             android:scaleType="fitCenter"
