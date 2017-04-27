@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.vmac.WatBot.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -21,7 +25,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:background="@android:color/white"
         android:orientation="horizontal"
         android:weightSum="4">
 
@@ -29,12 +32,13 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="10dp"
-            android:background="@null"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/blue"
             android:hint="@string/what_s_on_your_mind"
-            android:lines="1"
-            android:paddingLeft="10dp" />
+            android:lines="3"
+            android:paddingLeft="0dp"
+            android:layout_weight="4.14" />
 
         <!--<Button android:id="@+id/btn_send"
             android:layout_width="0dp"
@@ -44,12 +48,12 @@
             android:text="ASK"
             android:textSize="16dp"
             android:textColor="@color/colorPrimary" />-->
-        <android.support.v7.widget.AppCompatImageButton
+        <ImageButton
             android:id="@+id/btn_send"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:background="@null"
+            android:layout_marginBottom="0dp"
+            android:background="@color/blue"
             android:elevation="0dp"
             android:paddingLeft="0dp"
             android:scaleType="fitCenter"
@@ -58,10 +62,11 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/voice"
+            android:layout_height="58dp"
+            app:srcCompat="@mipmap/voice1"
             android:id="@+id/imageButton"
-            android:paddingLeft="0dp"
+            android:background="@color/blue"
+            android:scaleType="fitCenter"
             android:onClick="onButtonClick" />
 
 

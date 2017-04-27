@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Watson Text-to-Speech Service on Bluemix
         final TextToSpeech service = new TextToSpeech();
-        service.setUsernameAndPassword("10ae225c-4170-43bc-92b7-6b6503e95483", "jJ0zmaxmO7Mx");
+        service.setUsernameAndPassword("5ac74b0b-43c3-4b8e-9d8e-47f23639672a", "0gS2ASEkof86");
 
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
@@ -160,9 +160,9 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
                     ConversationService service = new ConversationService(ConversationService.VERSION_DATE_2016_09_20);
-                    service.setUsernameAndPassword("73ff03f1-a34a-4ab4-b428-6bd93044c124", "8ufhBZo8RmHD");
+                    service.setUsernameAndPassword("2df34d8c-5d73-4fac-b2ce-87974f6efbf3", "gG5wLLSeXDvO");
                     MessageRequest newMessage = new MessageRequest.Builder().inputText(inputmessage).context(context).build();
-                    MessageResponse response = service.message("2e964538-2651-45d5-8cc9-82d014ae33ad", newMessage).execute();
+                    MessageResponse response = service.message("d1ef50bd-68a3-4277-adf6-f3089648de4c", newMessage).execute();
 
                     //Passing Context of last conversation
                     if (response.getContext() != null) {
